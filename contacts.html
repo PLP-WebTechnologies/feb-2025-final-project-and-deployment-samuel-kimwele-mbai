@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Contact Us</title>  <!-- Consistent title format -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <div class="error-message" id="message-error"></div>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            
+            <!-- Added contact info section -->
+            <div class="contact-info">
+                <h3>Reach Us Directly</h3>
+                <p>📧 Email: mbaisamuel127.com</p>
+                <p>📞 Phone: +254790506501</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Samuel Mbai. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart Sidebar (Consistent across all pages) -->
+    <div id="cart-sidebar">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">Total: $0.00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
